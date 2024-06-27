@@ -63,6 +63,13 @@ The NASA EPIC API requires an API key to access the data. The API key should be 
 
 To set the API key, open the `.env` file and add the following line, replacing `YOUR_API_KEY` with your actual NASA EPIC API key:
 
+## To Do's
+
+* Add Guzzle for a better perfomance while downloading the images
+* Add parallel downloads
+* Add throttling
+* Add enhanced (actual ***only*** natural)
+
 ## License
 
 This project is licensed under the MIT License.
