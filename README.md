@@ -29,17 +29,16 @@ php bin/console app:fetch-nasa-epic-images [target-folder] [date]
  (required): The path to the folder where the images will be stored.
 
 * date
- (optional): The date for which to fetch images in the format 
-YYYY-MM-DD
-. If not provided, the command will fetch images for the last available date.
+ (optional): The date for which to fetch images in the format YYYY-MM-DD. 
+ If not provided, the command will fetch images for the last available date.
 
 Example:
 
 ```bash
-php bin/console app:fetch-nasa-epic-images /path/to/target/folder 2023-04-01
+php bin/console app:fetch-nasa-epic-images /path/to/target/folder 2024-06-11
 ```
 
-This command will fetch NASA EPIC images for the date 2023-04-01 and store them in the /path/to/target/folder/2023-04-01 directory.
+This command will fetch NASA EPIC images for the date 2024-06-11 and store them in the /path/to/target/folder/2024-06-11 directory.
 
 ## How it Works
 
@@ -53,9 +52,8 @@ This command will fetch NASA EPIC images for the date 2023-04-01 and store them 
 
 This command uses the following Symfony components:
 
-symfony/console: For creating the console command.
-
-symfony/http-client: For making HTTP requests to the NASA EPIC API.
+* symfony/console: For creating the console command.
+* symfony/http-client: For making HTTP requests to the NASA EPIC API.
 
 ## Configuration
 
@@ -69,6 +67,10 @@ To set the API key, open the `.env` file and add the following line, replacing `
 * Add parallel downloads
 * Add throttling
 * Add enhanced (actual ***only*** natural)
+
+## Go Version
+
+A more simplier approach in Golang is uploaded to [this repository](https://github.com/deemount/goFetchNasaEpicImage)
 
 ## License
 
